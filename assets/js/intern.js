@@ -88,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Web Developer",
       desc: [
-        "Builds and maintains responsive, user-friendly websites.",
-        "Collaborates with designers and backend developers.",
-        "Optimizes website performance for all devices."
+        "Responsible for building, testing, and maintaining dynamic, responsive websites and web applications."
       ],
       img: "assets/images/services/Web.jpg",
       date: "01 Nov 2025",
@@ -99,9 +97,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "AI Developer",
       desc: [
-        "Designs and implements intelligent systems.",
-        "Builds and trains machine learning models.",
-        "Integrates AI solutions into real-world applications."
+        "Develops and deploys AI models and machine learning solutions to solve real-world business problems."
       ],
       img: "assets/images/services/AI.jpg",
       date: "02 Nov 2025",
@@ -110,9 +106,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Digital Marketing",
       desc: [
-        "Elevates brand presence with data-driven strategies.",
-        "Analyzes user engagement and campaign metrics.",
-        "Drives measurable marketing growth and visibility."
+        "Manages digital campaigns to increase brand awareness, traffic, and customer engagement."
       ],
       img: "assets/images/services/Marketing.jpg",
       date: "03 Nov 2025",
@@ -121,9 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "Business Analyst",
       desc: [
-        "Analyzes business requirements and data insights.",
-        "Improves efficiency through optimized workflows.",
-        "Bridges the gap between business and technology."
+        "Identifies business needs, analyzes data, and provides insights to support strategic decision-making."
       ],
       img: "assets/images/services/BA.jpg",
       date: "04 Nov 2025",
@@ -132,9 +124,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       title: "UX Designer",
       desc: [
-        "Designs intuitive, user-centered interfaces.",
-        "Conducts usability testing for continuous improvement.",
-        "Enhances overall user experience through research."
+        "Creates intuitive and user-centered interfaces that enhance usability and overall user experience."
       ],
       img: "assets/images/services/UX.jpg",
       date: "05 Nov 2025",
