@@ -1,11 +1,11 @@
 // ====== Preloader ======
-window.addEventListener("load", function () {
+window.addEventListener("DOMContentLoaded", function () {
   const preloader = document.getElementById("js-preloader");
   if (preloader) {
     preloader.classList.add("loaded");
     setTimeout(() => {
       preloader.style.display = "none";
-    }, 500);
+    }, 100);
   }
 });
 
@@ -92,7 +92,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       img: "assets/images/services/Web.jpg",
       date: "01 Nov 2025",
-      link: "#"
     },
     {
       title: "AI Developer",
@@ -101,7 +100,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       img: "assets/images/services/AI.jpg",
       date: "02 Nov 2025",
-      link: "#"
     },
     {
       title: "Digital Marketing",
@@ -110,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       img: "assets/images/services/Marketing.jpg",
       date: "03 Nov 2025",
-      link: "#"
     },
     {
       title: "Business Analyst",
@@ -119,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       img: "assets/images/services/BA.jpg",
       date: "04 Nov 2025",
-      link: "#"
     },
     {
       title: "UX Designer",
@@ -128,7 +124,6 @@ document.addEventListener("DOMContentLoaded", function () {
       ],
       img: "assets/images/services/UX.jpg",
       date: "05 Nov 2025",
-      link: "#"
     }
   ];
 
@@ -145,11 +140,11 @@ document.addEventListener("DOMContentLoaded", function () {
       const li = document.createElement("li");
       li.innerHTML = `
         <div class="left-content align-self-center">
-          <a href="#"><h4>${job.title}</h4></a>
+          <h4>${job.title}</h4>
           <p>${job.desc[0]}</p>
         </div>
         <div class="right-image">
-          <a href="#"><img src="${job.img}" alt=""></a>
+          <img src="${job.img}">
         </div>
       `;
       li.addEventListener("click", () => {

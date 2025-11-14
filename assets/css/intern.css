@@ -1,29 +1,4 @@
 /* 
-
-TemplateMo 562 Space Dynamic
-
-https://templatemo.com/tm-562-space-dynamic
-
-*/
-
-/* ---------------------------------------------
-Table of contents
-------------------------------------------------
-01. font & reset css
-02. reset
-03. global styles
-04. header
-05. banner
-06. features
-07. testimonials
-08. contact
-09. footer
-10. preloader
-11. search
-12. portfolio
-
---------------------------------------------- */
-/* 
 ---------------------------------------------
 font & reset css
 --------------------------------------------- 
@@ -314,7 +289,7 @@ header
 
 #menu.nav h4,
 #menu.nav a {
-  font-family: "Open Sans", sans-serif;  /* ← change this to your desired font */
+  font-family: "Open Sans", sans-serif; 
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.5px;
@@ -506,6 +481,40 @@ Hero Style
   letter-spacing: 2px;
 }
 
+@media (max-width: 768px) {
+
+  .main-hero {
+    padding: 130px 0 40px 0; /* reduce height */
+    background-position: center;
+  }
+
+  /* Left decorative image */
+  .main-hero:after {
+    width: 120px;
+    height: 280px;
+    top: 80px;
+    left: -20px;  /* push slightly out to avoid overlap */
+    background-size: contain;
+  }
+
+  /* Right decorative image */
+  .main-hero:before {
+    width: 70px;
+    height: 180px;
+    top: 80px;
+    right: -10px;
+    background-size: contain;
+  }
+
+  /* Heading */
+  .main-hero .left-content h1 {
+    font-size: 55px;  /* reduce from 100px */
+    line-height: 1.1;
+    letter-spacing: 1px;
+    padding: 0 10px;  /* avoid touching edges */
+    text-align: center;
+  }
+}
 
 
 /* 
@@ -559,6 +568,10 @@ About Us Style
   overflow: visible;  /* allow full visibility of last item */
   min-height: 100vh;  /* ensures full vertical space */
 }
+
+.about-us .right-text{
+    margin-left: 6rem;
+  }
 
 /* Mobile fix */
 @media (max-width: 576px) {
@@ -781,6 +794,97 @@ Position
   }
 }
 
+/* =======================
+   MOBILE VIEW (Tablet + Mobile)
+   ======================= */
+@media (max-width: 768px) {
+
+  .positions {
+    margin-top: -80px;
+    padding-top: -40px;
+  }
+
+  /* Section Heading */
+  .positions .section-heading h2 {
+    margin-right: 0;       /* center it */
+    text-align: center;
+    font-size: 28px;
+  }
+
+  /* Decorative Top Image */
+  .positions .top-dec {
+    margin-top: -40px;
+    text-align: center;
+  }
+
+  .positions .top-dec img {
+    max-width: 180px;
+  }
+
+  /* Left Image Full Width */
+  .positions .left-image img {
+    max-width: 100%;
+    aspect-ratio: auto;
+    border-radius: 16px;
+  }
+
+  /* Remove overlapping inner content */
+  .positions .left-image .info .inner-content {
+    position: relative;
+    margin: 15px 0 0 0;
+    padding: 1.5rem;
+    border-radius: 16px;
+  }
+
+  /* Button reposition */
+  .positions .left-image .info .main-blue-button {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+
+  /* Tags (li items) */
+  .positions .left-image ul li {
+    font-size: 13px;
+    margin-right: 10px;
+  }
+
+  /* Right List - Stack items vertically */
+  .positions .right-list {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  .positions .right-list ul li {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .positions .right-list .left-content {
+    margin-right: 0;
+  }
+
+  /* Titles & text resizing */
+  .positions .right-list .left-content h4,
+  .positions .left-image h4 {
+    font-size: 18px;
+    margin: 12px 0;
+  }
+
+  .positions .right-list .left-content p {
+    font-size: 14px;
+  }
+
+  /* Right-side images */
+  .positions .right-list .right-image img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 16px;
+    margin-top: 10px;
+  }
+}
+
 
 /* ------------------------------------------
 SERVICES
@@ -823,7 +927,7 @@ SERVICES
 }
 
 .our-services .section-heading h2 em {
-  color: #ff4d61;
+  color: #06c025;
   font-style: normal;
 }
 
@@ -884,7 +988,7 @@ SERVICES
 }
 .skill-percent {
   font-weight: 700;
-  color: #ff4d61;
+  color: #06c025;
   min-width: 48px;
   text-align: right;
 }
@@ -905,7 +1009,7 @@ SERVICES
   height: 100%;
   width: 0%;
   border-radius: 10px;
-  background: linear-gradient(90deg, #ff4d61 0%, #ff7b89 100%);
+  background: linear-gradient(90deg, #f7f71b 0%, #06c025 100%);
   box-shadow: 0 4px 12px rgba(255, 77, 97, 0.18);
   transition: width 1.6s cubic-bezier(.22,.9,.32,1);
 }
